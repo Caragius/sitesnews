@@ -1,0 +1,23 @@
+{% extends "main/hub.html" %}
+
+{% block content %}
+<div class = "alert alert-primary">
+    <h1 ><font color="#2c2c2c">Форма по добавлению статьи</font></h1>
+    <form method="post">
+        {% csrf_token %}
+       <br> {{form.title}}<br>
+        <br>{{form.anons}}<br>
+        <br>{{form.full_text}}<br>
+        <br>{{form.date}}<br>
+        <button class="qwe" type="submit">Добавить новость</button>
+<!--
+        <input type="text" placeholder="Title" name="title"><br>
+        <input type="text" placeholder="Anons" name="anons"><br>
+        <input type="textarea" placeholder="Anons" name="full_text"><br>
+        <input type="date"  name="date"><br>
+        <span>{{ error }}</span>
+        <button class="qwe" type="submit">Добавить новость</button>
+ -->
+    </form>
+</div>
+{% endblock %}

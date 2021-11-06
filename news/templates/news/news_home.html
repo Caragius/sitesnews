@@ -1,0 +1,23 @@
+{% extends "main/hub.html" %}
+
+{% block content %}
+<div class = "features">
+    <h1 ><font color="white">{{title}}</font></h1>
+    {% if news %}
+        <div class="news">
+        {% for elem in news %}
+
+            <div class="alert alert-primary">
+                <h3>{{elem.title}}</h3>
+                <p>{{elem.anons}}</p>
+                <button><a href="{% url 'ppost' elem.id %}">Читать подробнее</a></button>
+
+                <br>
+            </div>
+        {% endfor %}
+        </div>
+    {% else %}
+        <h1>Записи пока не добавлены</h1>
+    {%endif%}
+</div>
+{% endblock %}

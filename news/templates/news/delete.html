@@ -1,0 +1,20 @@
+{% extends "main/hub.html" %}
+
+{% block content %}
+<div class = "NEWS">
+    <h1 ><font color="white">Форма по удалению статьи статьи</font></h1>
+    <form method="post">
+        {% csrf_token %}
+
+        <button class="qwe" type="submit">Удалить новость</button>
+<!--
+        <input type="text" placeholder="Title" name="title"><br>
+        <input type="text" placeholder="Anons" name="anons"><br>
+        <input type="textarea" placeholder="Anons" name="full_text"><br>
+        <input type="date"  name="date"><br>
+        <span>{{ error }}</span>
+        <button class="qwe" type="submit">Добавить новость</button>
+ -->
+    </form>
+</div>
+{% endblock %}

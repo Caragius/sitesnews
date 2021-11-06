@@ -1,0 +1,9 @@
+{% extends "main/hub.html" %}
+
+{% block content %}
+    <h1>{{artical.title}}</h1>
+    <h1>{{artical.date}}</h1>
+    <h1>{{artical.full_text}}</h1>
+    <button><a href="{% url 'update' artical.id %}">Редактировать статью</a></button>
+    <button><a href="{% url 'delete' artical.id %}">Удалить статью</a></button>
+{% endblock %}

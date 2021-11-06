@@ -1,0 +1,34 @@
+.body {
+    background: #2c2c2c;
+}
+aside {
+    background: #181818;
+    width: 15%;
+    height: 100vh;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside ul, aside a {list-style:none;}
+aside ul li {
+    color: white;
+    display: block;
+    margin-top: 20px;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: red;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+a {text-decoration: none;}
+
+.main {
+    position: relative;
+    margin:0 auto;
+    margin-top: -85vh;
+    margin-right: 20vw;
+    width: 40%;
+}
